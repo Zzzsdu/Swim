@@ -664,7 +664,6 @@ h3 {
 }
 
 .contact-panel span,
-.contact-panel strong,
 .contact-panel p {
   display: block;
 }
@@ -673,17 +672,39 @@ h3 {
   font-weight: 900;
 }
 
-.contact-panel strong {
-  margin: 0.35rem 0;
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  line-height: 1.15;
-  font-weight: 900;
-}
-
 .contact-panel p {
   margin-bottom: 0;
   color: oklch(35% 0.08 228);
   font-weight: 700;
+}
+
+.contact-list {
+  display: grid;
+  gap: 10px;
+  margin: 0.8rem 0 0.75rem;
+}
+
+.contact-list a {
+  display: grid;
+  gap: 2px;
+  min-height: 64px;
+  padding: 10px 12px;
+  background: oklch(99% 0.02 95 / 0.72);
+  border: 1px solid oklch(76% 0.12 85);
+  border-radius: var(--radius);
+}
+
+.contact-list small {
+  color: oklch(35% 0.08 228);
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+
+.contact-list strong {
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.05;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
 }
 
 .site-footer {
